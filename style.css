@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url(img/blob-scene-haikei.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.wrapper {
+  width: 300px;
+}
+
+.wrapper .logo {
+  text-align: center;
+}
+
+.wrapper form .input-login {
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+.wrapper form .input-login:nth-child(1) {
+  margin-top: 71px;
+}
+
+.wrapper form .input-login:nth-child(2) {
+  margin-top: 20px;
+}
+
+.wrapper form .input-login input {
+  width: 100%;
+  height: 100%;
+  padding-left: 51px;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  caret-color: #fff;
+  font-size: 14px;
+}
+
+.wrapper form .input-login input::placeholder {
+  color: #fff;
+}
+
+.wrapper form .input-login img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.wrapper form button {
+  width: 100%;
+  height: 45px;
+  color: #2148C0;
+  font-weight: 600;
+  margin-top: 43px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.wrapper form .forgot-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
+  font-weight: 500;
+  margin-top: 11px;
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper form .forgot-link {
+    text-align: center;
+  }
+}
